@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Title</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0"!></!For Android and other non-window platforms.>
+		<style>
+			body{
+				background-color:yellow;
+				text-align:center;
+			}
+			h2{
+				font-style:italic;
+				size:30px;
+				color:green;
+			}
+			p{
+				font-size:25px;
+			}
+			.green{
+				color:darkgreen;
+			}
+			.yellow{
+				color:yellowgreen;
+			}
+			.red{
+				color:darkred;
+			}
+		</style>
+		<script type="text/javascript" src="ExternalJs.js"></script>
+	</head>
+	<body>
+		<h1 style="color:green">WUBISHET ASBE</h1>
+		<h1 style="color:green"> Primary HTML Head</h1>
+		<h2 style="color:blue">Secondary HTML head</h2>
+		<h5 style="color:yellowgreen">Fifth HTML head</h5>
+		<p style="color:darkgoldenrod">HTML paragraphs field</p>
+		<dfn>HTML</dfn> stands for HyperText Markup Language.
+		<h3 title="This is tertiary head field with title attribute in HTML body.">Place the cursor over here for h3 title attribute's notice</h3>
+		<p title="This is paragraph field with title attribute in HTML body.">Leave the cursor over here for paragraph title attribute's notice</p>
+		Click <a href="https://github.com/WUBISHETASBEgit/Repo1.git" target="_blank"> here </a> to access my reserve github account on new webpage.
+		<br>
+		<b>HTML bold tag</b>
+		<br>
+		<strong>This is important content with strong tag, </strong>while this is normal content.
+		<br>
+		<i>HTML italic tag</i>
+		<br>
+		<em>This is an important content with em tag, <em>while this is a normal content.
+			<br>
+		<u>HTML underline tag</u>
+		<br>
+		<hr>HTML horizontal line tag
+		<br>
+		<mark>This is an important text with mark tag, </mark>while this is a normal content. 
+		<br>
+		<strike>This is a striked field, </strike>while this is a normal field.
+		<br>
+		This is a <sup>Superscript</sup> text.
+		<br>
+		This is a <sub>Subscript</sub> text.
+		<br>
+		This is a <del>deleted</del> text.
+		<br>
+		This is an <ins>inserted</ins> text.
+		<br>
+		This is a <big> larger</big> text.
+		<br>
+		This is a <small> smaller</small> text.
+		<br>
+		<wbr>
+		<center>
+		<table id="alter">
+			<caption>Directorates' Information<caption>
+			<tr><th>First Name</th><th>Middle Name</th><th>Last Name</th><th>SSN</th></tr>
+			<tr><td>Abebayehu</td><td>Bekele</td><td>Haileselassie</td><td>NFSR123123/53</td></tr>
+			<tr><td>Ephrem</td><td>Haileyesus</td><td>Gebeyehu</td><td>GRSP539736/89</td></tr>
+			<tr><td>Yohannes</td><td>Gihebreselassie</td><td>Gihebreyesus</td><td>WNSR219716/36</td></tr>
+		</center>
+					<style>
+				table,th,td{
+					border:1px solid green;
+					border-collapse:collapse;
+				}
+				th,td{
+					padding:10px;
+				}
+				table#alter tr:nth-child(even)
+				{
+					background-color:greenyellow;
+				}
+				table#alter tr:nth-child(odd)
+				{
+					background-color:skyblue;
+				}
+				table#alter th{
+					color:white;
+					background-color:darkgreen;
+				}
+			</style>
+		</table>
+		<br>
+		<img src="C:/Users/wubis/OneDrive/Pictures/Image1.jpg" width="600" height="1500">
+		<h1>Click on the Robotics Image to access further information !<h1>
+		<a href="https://javatpoint.com/what-is-robotics"><img src="C:/Users/wubis/Downloads/Robotics.jpg" width="500" height="1000">
+		</a>
+		  <h2>HTML Template tag</h2>  
+		  <button onclick="clickfun()">Click Here </button> for new notifications
+	<template id="">
+   	<script>  
+   	alert("You are dealing with HTML template tag. Click OK to continue.")  
+   	</script> 
+	</template>
+	<script>  
+   	function clickfun() {  
+    var x= document.getElementsByTagName("template")[0];  
+    var y=x.content.cloneNode(true); 
+    document.body.appendChild(y);
+	}
+	</script> 
+	<br>
+	<h2>Registration Form</h2>
+	<form id="form-ctrl">
+	<label for="FName">First Name: <input id="FName" type="text" name="FName" required size="30"></input></label>
+	<br>
+	<label for="Minit">Middle Name: <input id="Minit" type="text" name="Minit" required size="30"></input></label>
+	<br>
+	<label for="LName">Last Name: <input id="LName" type="text" name="LName" required size="30"></input></label>
+	<br>
+	<label for="Email">Email: <input type="email" id="Email" name="Email" required></input></label>
+	<br>
+	<label for="Password"> Password: <input id="Password" type="password" name="password" required></input></label>
+	<br>
+	<label for="Gender">Gender:</label>
+		 <input type="radio" id="Gender" name="gender" value="male">Male</input>
+	<input type="radio" id="Gender" name="gender" value="female" required>		Female</input>
+	<br>
+	<Label for="Stream">Favourite Stream(s): </label>
+		<br>
+		 <input type="checkbox" id="Stream" name="stream" value="Eng">Engineering</input>
+		 <br>
+		 <input type="checkbox" id="Stream" name="Tech" value="Techno">Technology</input>
+		 <br>
+		 <input type="checkbox" id="Stream" name="Health" value="health">Health Science</input>
+		 <br>
+		 <label for="entert">Favourite Entertainment:</label>
+		 <br>
+		 <input type="checkbox" id="entert" name="Entert" value="entertainm">Football</input>
+		 <br>
+		 <input type="checkbox" id="entert" name="Entert" value="book">Books</input>
+		 <br>
+		 <input type="checkbox" id="entert" name="Entert" value="movie" disabled>Movies</input>
+		 <br>
+		 <br>
+		 <label for="country">Select your country : </label>
+		   <select id="country" name="country" style="width:200">
+		 	<optoin value="">Ethiopia</option>
+		 	<option value="">America(USA)</option>
+		 	<option value="">British</option>
+		 	<option value="">Israel</option>
+		 	<option value="">Russia</option>
+		 	<option value="">Canada</option>
+		 	<option value="">China</option>
+		 	<option value="">Portugal</option>
+		 	<option value="">Germany</option>
+		 	<option value="">Japan</option>
+		 	<option value="">India</option>
+		 	<option value="">Poland</option>
+		 	<option value="">Croatia</option>
+		 </select>
+		 <br>
+		 <br>
+		 <label for="date">Enter your date of birth: </label>
+		 <input id="date" type="date" name="Bdate" required></input>
+		 <br>
+		 <br>
+		 <label form="Age" >Select your age: </label>
+		 <input type="number"  name="num" id="Age" min="18" max="36" size="30"></input>
+		 <br>
+		 <br>
+		 <label for="website">Enter your website: </label>
+		 <input id="website" type="url" name="web" placeholder="https://MyWebsite.com"></input>
+		 <br>
+		 <br>
+		 <label for="Search">Search over here:  </label>
+	 <br>
+		 <br>
+		 <label for="telNo">Enter your Telephone Number:  </label>
+		 <input type="tel" id="telNo" name="PhoneNumber" pattern="[0-9]" required></input>
+		 <br>
+		 <br>
+		 <label for="comment">Comment Section: </label>
+		 <br>
+		  <textarea row="10" colum="100" id="comment"></textarea>
+		 <br>
+	<input type="submit"></input> 
+
+	    <!input type="submit">
+	    	<br>
+	    </form>
+	    <h6>form attribute W-out form tag</h6>
+	    Enter your Address: <input form="form-ctrl" type="address" name="address" value="Address" size="36"></input>
+		<p>I am going to deal with HTML basics from <time>09:00 pm - 13:00 pm 2022-11-27.</time></p>
+		<p>Normal text with HTML paragraph(p) tag</p>
+		<tt>Teletype text with HTML teletype(tt) tag</tt>
+		<br>
+		<wbr>
+			<center>
+				<h1>Resume and Unmute the video below to enjoy a fantastic classical !</h1>
+		<video widh="300" height="500" controls loop muted>
+			<source src="C:/Users/wubis/Videos/EthioClasssical.mp4" type="video/mp4">
+				Video has not been properly uploaded in an HTML file.
+		</video> 
+  		<br>
+  		<h2>Resume and Unmute the audio under here to enjoy an astonishing Ethio  National Anthem !</h2>
+		<audio autoplay muted controls loop>
+			<source src="C:/Users/wubis/OneDrive/Pictures/Screenshots/EthioNationalAnthem.mp3" type="audio/mpeg">
+				Aduio file is not supported by your browser.
+			</audio>
+		</center>
+			<br>
+			<h2>Scalable Vector Graphics (SVG) with HTML</h2>
+			<svg width="200" height="200">
+				<circle cx=100 cy=100 r=98 stroke="green" stroke-width="5" fill="yellow">
+			</svg>
+			<br>
+			<svg width="200" height="200">
+				<rect width="196" height="198" stroke="blue" stroke-width="5" fill="orange">
+			</svg>
+			<br>
+			<svg width="200" height="200">
+				<polygon points="30,100 100,200 30, 65,34 89,45
+				 100,200" stroke="red" stroke-widh="5" fill="blue">
+				 <br>
+				 <svg widh="200" height="200">
+				 	<line x0="21" y0="16" x1="190" y2="196" stroke="darkgreen" stroke-width="5">
+				 </svg>
+				 <br>
+				<svg widh="300" height="300">
+					<polyline points="30,50 60,80 70,40 100,60 80,200 40,100 5,35 98,300" stroke="red" stroke-width="5" fill="darkblue" ">
+				</svg>
+				<h2>HTML with Internal/Embedded CSS</h2>
+				<p class="green">HTML green paragraph with embedded CSS.</p>
+				<p class="yellow">HTML yellow paragraph with embedded CSS.</p>
+				<p class="red">HTML red paragraph with embedded CSS.</p>
+				<br>
+				<h1>Complete HTML Tutorial</h1>
+				<<iframe width="1000" height="700" src="https://www.youtube.com/embed/kUMe1FH4CHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h1>Complete CSS Tutorial</h1>
+				<iframe width="1000" height="700" src="https://www.youtube.com/embed/OXGznpKZ_sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+				<h1>Complete JavaScript Tutorial</h1>
+				<iframe width="1000" height="700" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+				<h1>Building a Complete Fullstack Responsive MERN App with Auth, Likes, Dark Mode | React, MongoDB, MUI</h1>
+				<iframe width="1000" height="700" src="https://www.youtube.com/embed/K8YELRmUb5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+				<h1>Modern BOOTCAMP Tutorial</h1>
+				<iframe width="1000" height="700" src="https://www.youtube.com/embed/ZxKM3DCV2kE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+
+				<h2>HTML Date and Time</h2>
+				<h3 id="ID"></h3>
+				<button onclick="document.getElementById('ID').innerHTML=Date()">Display Date and Time</button>
+				<br>
+				<h2>JavaScript Event with HTML h3 tag</h2>
+				<p id="privID"></p>
+				<input type="submit" value="Click here for Js event" onclick="initialFunction()"></input>
+					<script>
+						function initialFunction()
+						{
+							document.getElementById("privID").innerHTML="Welcome to JavaScript Event tutorial with HTML !";
+							document.getElementById("privID").style.fontSize="22px";
+							document.getElementById("privID").style.color="blue";
+							document.getElementById("privID").style.backgroundColor="lightgreen";
+						}
+					</script>
+					<form onsubmit="externFunction()">
+						<br>
+						<br>
+						<label id="user">First Name:</label>
+						<input type="text" id="user"></input>
+						<br>
+						<br>
+						<label>Father Name:</label>
+						<input type="text"></input>
+						<br>
+						<br>
+						<label>G.F.Name</label>
+						<input type="text"></input>
+						<br>
+						<br>
+						<label>Email:</label>
+						<input type="email"></email>
+						<br>
+						<br>
+						<label>Password:</label>
+						<input type="password"></input>
+						<br>
+						<br>
+						<!input type="submit">
+						<input type="button" value="Submit" onclick="alert('Welcome!  You have succcessfully submitted the form !')">
+						<br>
+					</form>
+					<br>
+					<details>
+						<summary>This is just Summary, Click over here for details:~</summary>
+						<p>Details in HTML are the subsequent elements after the summary text activation for further expanded set of informations. </p>
+					</details>
+      <br>
+      <h2>HTML var tag for accelation</h2>
+    <strong>Acceleration, <var>a</var>=<var></var><var>1/2mv</var><sup>2</sup>.
+    	<br>  
+    	 where:~ 
+    	 <br>a: accelaretion of the entity in motion,<br>
+    		 m: mass of the object (an entity) and <br>
+    		 v: velocity of the object in motion.
+    	</strong>
+    <br>
+    <h1>HTML Symbols as a reserved characters</h1>
+    <strong>
+    &lt;
+    &copy;
+    &reg;
+    &trade;
+    &euro;
+    &lt;
+    &copy;
+    &reg;
+    &trade;
+    &euro;
+    &dollar;
+    &yen;
+    &cent;
+    &Alpha;
+    &Beta;
+    &Gamma;
+    &Delta;
+    &Theta;
+    &Epsilon;
+    &Zeta;
+    &forall;
+    &exist;
+    &isin;
+    &ni;
+    &empty;
+    &quot;
+    &ni;
+    &sum;
+    &prod;
+    &rarr;
+    &uarr;
+    &darr;
+    &larr;
+    &spades;
+    &clubs;
+    &diams;
+    &hearts;
+    &gt;
+    <strong>
+      <h1 class="layout">HTML with div Framework</h1>
+	<title>Webpage using div</title>
+	<style>
+		body{
+			margin:0px;
+		}
+        .header{
+                padding: 10px;
+                background-color:green;
+                color:white;
+                text-align: center;
+               }
+          .header h2{
+          	color:deeppink; }
+              /*===============[Nav CSS]==========*/
+              .nav{
+              	background-color:black;
+              	padding: 10px;
+              	}
+             
+              .nav li{
+              list-style: none;
+              display: inline-block;
+              padding: 8px;
+               }
+           .nav a{
+           	color: floralwhite;
+           }
+           
+          .nav ul li a:hover{
+            text-decoration: none;
+            color:darkblue;
+           }
+              .Side{
+              	 float:right;
+               width: 30%;
+               min-height: 440px;
+               background-color:lightpink;
+               text-align: center;
+              }
+           .txtField
+           {
+           	text-align: center;
+            float:left;
+           	width: 70%;
+           	  min-height: 440px;
+             background-color:yellow;
+           }
+           .txtField textarea{
+           	height:440px;
+           	width:850px;
+           }
+          .Side{
+             color:darkgreen;
+           }
+           .footer p{
+             height: 70px;
+            background-color:white; 
+           	text-align: center; 
+           	padding-top: 30px;}
+           	.footer h3{
+             height: 70px;
+            background-color:yellowgreen; 
+           	text-align: center; 
+           	padding-top: 20px;}
+           	.footer h3{
+           		color:darkgreen;
+           	}
+           	.footer p{
+           		color:darkgreen;
+           	}
+	</style>
+</head>
+<body>
+<div>
+	<div class="header">
+	  <h2>javaTpoint Div Layout</h2>
+	</div>
+         	<!-- Nav -->
+      	<div class="nav">
+      		<ul>
+                <li><a href="#">HOME</a></li>
+				<li><a href="#">MENU</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li style="float: right;"><a href="#">LOGIN</a></li>
+				<li style="float: right;"><a href="#">SIGN-UP</a></li>
+			</ul>
+      	</div> 
+      <!-- main -->
+      	<div style="height:440px" width>
+      		<div class="txtField">	
+      			<textarea style="color:darkgreen" type="text">Write your content over here</textarea>
+      		</div>
+      	<!-- side -->
+      		<div class="Side">
+      			<p>This is side tag field</p>
+      		</div>
+      	</div>
+      <!-- footer -->
+       <div class="footer">
+    	<h3>HTML Footer</h3>  
+   		<p>&copy; Copyright 2018-2022.
+   			<br>
+   		<strong>@ javaTpoint.com</strong></p> 
+    </div> 
+	</body>		
+</html> 
