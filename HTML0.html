@@ -1,23 +1,45 @@
-<!DOCTYPE html>
-<html>
-	<head>
+      
+ <!DOCTYPE html>
+	<html>
+		<head>
 		<title>HTML Title</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0"!></!For Android and other non-window platforms.>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
 		<style>
 			body{
 				text-align:center;
 				background-image:url("C:/Users/wubis/Downloads/bg1.jpg");
 				background-attachment:fixed;
-				background-repeat:no repeat;
 				background-size:cover;
+				background-repeat:no repeat;
 			}
 			h2{
 				font-style:italic;
 				size:30px;
-				color:green;
+				coluor:green;
+			  }
+			ol {  
+   				 counter-reset: section;  
+ 			     list-style-type: none;  
+				}  
+			li::before {  
+    					counter-increment: section;  
+    					content: counters(section,".") " ";  
+						}
+			.fa,.glyphicon,.material-icons{
+				color:mediumvioletred;
+				font-size:50px;
+				margin:10px;
 			}
 			p{
 				font-size:25px;
+			 }
+			#text-decoration{
+				 text-decoration: blue wavy overline underline line-through; 
+				 font-size:50px; 
+          		 color:black;
 			}
 			.green{
 				color:darkgreen;
@@ -28,13 +50,109 @@
 			.red{
 				color:darkred;
 			}
+			#anime{
+				width:100px;
+				height:150px;
+				position:relative;
+				animation:Animation0 5s linear infinite; 
+			}
+			@keyframes Animation0{
+				0%{background: blue; left:-300px; top:-10px;}
+				18%{background: indigo; left:0px; top:-10px;}
+				25%{background: darkgreen; left: 190px; top: -10px;}
+				36%{background: red; left:190px; top:270px;}
+				50%{background: yellow; left: 190px; top:530px;}
+				67%{background: purple; left:0px; top:530px;}
+				75%{background: violet; left: -300px; top: 530px;}
+				83%{background: pink; left:-300px; top:270px;}
+				100%{background: darkred; left: -300px; top: -10px;}
+			}
+			.radial-grad{
+				width: 700px;
+				height: 700px;
+				background: radial-gradient(blue,white,green,yellow,purple,pink,red,violet,pink,indigo,orange,white);
+			} 
+	        .loader{ 
+            display: block; 
+            position: absolute; 
+            width: 20px; 
+            height: 20px; 
+            left:500px;
+            border-radius: 2em; 
+            transform-origin: 80px 160px; 
+            animation: PgLoader; 
+            animation-iteration-count: infinite; 
+            animation-duration: 1.6s; 
+        } 
+   
+        @keyframes PgLoader { 
+              0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); } 
+        } 
+        #id1 { 
+            animation-delay: 0.1s; 
+            background-color: blue; 
+        } 
+        #id2 { 
+            animation-delay: 0.2s; 
+            background-color: red; 
+        } 
+        #id3 { 
+            animation-delay: 0.3s; 
+            background-color: yellow; 
+        } 
+        #id4 { 
+            animation-delay: 0.4s; 
+            background-color: green; 
+        } 
+        #id5 { 
+            animation-delay: 0.5s; 
+            background-color: magenta; 
+        }
+		#id6 { 
+		            animation-delay: 0.6s; 
+		            background-color: violet; 
+		        } 
+		#id7 { 
+		            animation-delay: 0.7s; 
+		            background-color: black; 
+		        }
+		#id8  { 
+		            animation-delay: 0.8s; 
+		            background-color: indigo; 
+		        }
+		#id9  { 
+		            animation-delay: 0.9s; 
+		            background-color: orange; 
+		        }
+		#id10 { 
+		            animation-delay: 1s; 
+		            background-color: white; 
+		        }
+		.spinner {
+				  border: 20px solid whitesmoke;
+				  position:absolute;
+				  left:500px;
+				  border-radius: 100%;
+				  border-top: 20px solid darkorange;
+				  border-bottom: 20px solid red;
+				  border-left:20px solid purple;
+				  border-right:20px solid darkgreen;
+				  width: 300px;
+				  height: 300px;
+				  animation: spinner0 1.5s linear infinite;
+		}
+		 @keyframes spinner0 {
+					0% { transform: rotate(0deg); }
+					100% { transform: rotate(360deg); }
+		}		        		        
 		</style>
 		<script type="text/javascript" src="ExternalJs.js"></script>
 	</head>
 	<body>
-		<marquee width="1300" height="25px" direction="right" bgcolor="black" style="color:white;"  border="1px solid blue">&copy; WUBISHET ASBE :&rarr;      </strong></marquee>
+		<marquee width="1300" height="25px" direction="right" bgcolor="black" style="color:white;"  border="1px solid blue"> &copy; WUBISHET ASBE :&rarr;      </strong></marquee>
 		<marquee width="1300" height="25px" behaviour="alternate" bgcolor="lightyellow" style="color:darkgreen;" border="1px solid pink">
-		 <strong>HTML :- as a HyperText Markup language, &ensp;CSS :- as a Cascading Style Sheet language &ensp; and &ensp;JavaScript :- as a Scripting language to instruct and style webpages ! </strong></marquee>
+		 <strong>HTML :- as a  HyperText Markup language,   CSS :- as a  Cascading Style Sheet language  and  JavaScript :- as a  Scripting language to manipulate and style webpages ! </strong></marquee>
 		<h1 style="color:green">WUBISHET ASBE</h1>
 		<h1 style="color:green"> Primary HTML Head</h1>
 		<h2 style="color:blue">Secondary HTML head</h2>
@@ -75,6 +193,84 @@
 		<br>
 		<wbr>
 		<center>
+						<h2>List of Major Tutorials in javaTpoint.com Website</h2>
+			<ol>  
+  				<li>C Tutorial</li>  
+  				<li>C++ Tutorial</li>  
+  				<li>Java Tutorial</li>
+  				<li>Python Tutorial</li>
+  				<li>C# Tutorial</li>
+  				<li>Web Development Tutorials 
+    				<ol>
+     						<li>HTML Tutorial</li>  
+							<li>CSS Tutorial</li>
+      						<li>JavaScript Tutorial</li> 
+      						<li>Flutter Tutorial</li> 
+      				</ol>
+      			<li>Backend Development Tutorials
+      					<ol>
+      						<li>Php Tutorial</li>
+      						<li>Django Tutorial</li>
+      						<li>Express.js Tutorial</li>
+      						<li>Angular Tutorial</li>
+      						<li>Next.js Tutorial</li>
+      						<li>Flutter Tutorial</li>
+       				    </ol>
+       			</li>
+       			<li>Database Tutorials</li>
+       				  <ol>
+       					<li>SQL Tutorial</li>
+       					<li>MySQL Tutorial</li>
+       					<li>Oracle Tutorial</li>
+       					<li>PostgreSQL Tutorial</li>
+       				  </ol> 
+       				</ol>
+       				<div>
+       				<h3> Font Awesome Icons </h3>
+       					      <i class="fa fa-cloud"></i>   
+     						  <i class="fa fa-file"></i>   
+          					  <i class="fa fa-heart"></i>   
+       						  <i class="fa fa-bars"></i>   
+     						  <i class="fa fa-car"></i>
+     				</div>
+     				<div>
+     				<h3>Bootstrap Icons</h3>
+     					<i class="glyphicon glyphicon-cloud"></i>   
+ 					    <i class="glyphicon glyphicon-file"></i>   
+ 					    <i class="glyphicon glyphicon-heart"></i>   
+      					<i class="glyphicon glyphicon-user"></i>   
+      					<i class="glyphicon glyphicon-thumbs-up"></i>   
+      					<i class="glyphicon glyphicon-remove"></i>  
+      					<i class="glyphicon glyphicon-envelope"></i>
+      				</div>
+      					<div>
+      				<h3>Google Icons</h3>
+      					<i class="material-icons">cloud</i>   
+      					<i class="material-icons">attachment</i>   
+      					<i class="material-icons">computer</i>   
+      					<i class="material-icons">favorite</i>   
+      					<i class="material-icons">traffic</i>
+      				</div>
+      		<div><p id="text-decoration">Wavy combination of lines with text decoration</p></div>
+      		      	<h2 style="color:darkorange;"><u>Animation and Page Loader with bare HTML and CSS !</u></h2>
+      		<div id="anime"></div>
+      			  <br>
+	      		<div id="id1" class="loader"></div> 
+	            <div id="id2" class="loader"></div> 
+	            <div id="id3" class="loader"></div> 
+	            <div id="id4" class="loader"></div> 
+	            <div id="id5" class="loader"></div> 
+	            <div id="id6" class="loader"></div> 
+	            <div id="id7" class="loader"></div> 
+	            <div id="id8" class="loader"></div>   
+	            <div id="id9" class="loader"></div> 
+	            <div id="id10" class="loader"></div>
+				 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      		<h2><u>CSS Radial-Gradient()!</u></h2>
+      		<div class="radial-grad"></div> 
+      		<h2 style="color:darkgoldenrod;"><u>Spinner with HTML and CSS !</u></h2> 
+			<div class="spinner"></div>  
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>    		      		
 		<table id="alter">
 			<caption>Directorates' Information<caption>
 			<tr><th>First Name</th><th>Middle Name</th><th>Last Name</th><th>SSN</th></tr>
@@ -105,7 +301,9 @@
 			</style>
 		</table>
 		<br>
-		<img src="C:/Users/wubis/OneDrive/Pictures/Image1.jpg" width="600" height="1500">
+		<img src="C:/Users/wubis/Downloads/Image1.jpg" width="600" height="1500" usemap="#Self"><img>
+		<map name="Self">
+    		<area shape="rect" coords="0,0,600,1500" href="https://github.com/Wubishet-Asbegiorggis?tab=repositories"></area>
 		<h1>Click on the Robotics Image to access further information !<h1>
 		<a href="https://javatpoint.com/what-is-robotics"><img src="C:/Users/wubis/Downloads/Robotics.jpg" width="500" height="1000">
 		</a>
@@ -187,7 +385,8 @@
 		 <input id="website" type="url" name="web" placeholder="https://MyWebsite.com"></input>
 		 <br>
 		 <br>
-		 <label for="Search">Search over here:  </label>
+		 <label for="Search">Search over here: </label>
+ 	 	 <input id="Search" type="searcb" name="search" placeholder="type search item here"></input>
 	 <br>
 		 <br>
 		 <label for="telNo">Enter your Telephone Number:  </label>
@@ -205,7 +404,7 @@
 	    </form>
 	    <h6>form attribute W-out form tag</h6>
 	    Enter your Address: <input form="form-ctrl" type="address" name="address" value="Address" size="36"></input>
-		<p>I am going to deal with HTML basics from <time>09:00 pm - 13:00 pm 2022-11-27.</time></p>
+		<p>I am gonna deal with HTML basics from <time>09:00 pm - 13:00 pm 2022-11-27.</time></p>
 		<p>Normal text with HTML paragraph(p) tag</p>
 		<tt>Teletype text with HTML teletype(tt) tag</tt>
 		<br>
@@ -217,7 +416,7 @@
 				Video has not been properly uploaded in an HTML file.
 		</video> 
   		<br>
-  		<h2>Resume and Unmute the audio under here to enjoy an astonishing Ethio  National Anthem !</h2>
+  		<h2>Resume and Unmute the audio under here to enjoy an astonishing Ethio National Anthem !</h2>
 		<audio autoplay muted controls loop>
 			<source src="C:/Users/wubis/OneDrive/Pictures/Screenshots/EthioNationalAnthem.mp3" type="audio/mpeg">
 				Aduio file is not supported by your browser.
@@ -233,19 +432,17 @@
 				<rect width="196" height="198" stroke="blue" stroke-width="5" fill="orange">
 			</svg>
 			<br>
-			<svg width="200" height="200">
-				<polygon points="30,100 100,200 30, 65,34 89,45
-				 100,200" stroke="red" stroke-widh="5" fill="blue">
+			<svg width="800" height="800">
+				<polygon points="400 0, 488 280, 784 280, 544 456, 634 728, 400 560, 68 728, 256 456, 16 280, 312 280" stroke="red" stroke-widh="5" fill="red"></polygon>
+			</svg>
 				 <br>
-				 <svg widh="200" height="200">
+				 <svg widh="auto" height="auto">
 				 	<line x0="21" y0="16" x1="190" y2="196" stroke="darkgreen" stroke-width="5">
 				 </svg>
 				 <br>
 				<svg widh="300" height="300">
 					<polyline points="30,50 60,80 70,40 100,60 80,200 40,100 5,35 98,300" stroke="red" stroke-width="5" fill="darkblue" ">
 				</svg>
-				<h1>HTML Canvas tag to draw mathematical diagrams</h1>
-
 				<h2>HTML with Internal/Embedded CSS</h2>
 				<p class="green">HTML green paragraph with embedded CSS.</p>
 				<p class="yellow">HTML yellow paragraph with embedded CSS.</p>
@@ -328,46 +525,10 @@
     <br>
     <h1>HTML Symbols as a reserved characters</h1>
     <strong>
-    &lt;
-    &copy;
-    &reg;
-    &trade;
-    &euro;
-    &lt;
-    &copy;
-    &reg;
-    &trade;
-    &euro;
-    &dollar;
-    &yen;
-    &cent;
-    &Alpha;
-    &Beta;
-    &Gamma;
-    &Delta;
-    &Theta;
-    &Epsilon;
-    &Zeta;
-    &forall;
-    &exist;
-    &isin;
-    &ni;
-    &empty;
-    &quot;
-    &ni;
-    &sum;
-    &prod;
-    &rarr;
-    &uarr;
-    &darr;
-    &larr;
-    &spades;
-    &clubs;
-    &diams;
-    &hearts;
-    &gt;
+             &lt;	&copy;		&reg;	&trade;		&euro;	&lt;    &copy;	&reg;	&trade;   &euro;	&dollar;   &yen;   &cent;   &Alpha;    &Beta;      &Gamma;	  &Delta;    &Theta;    &Epsilon;	&Zeta;	 &forall;    &exist;    &isin;    &ni;	   &empty;		&quot;		&ni;    &sum;	&prod;
+    &rarr;    &uarr;	&darr;    &larr;    &spades;	&clubs;		&diams;		&hearts;	 &gt;
     <strong>
-    	<h1>Click on each icon to be redirected to the tutorials webpage for each language with &lt;image&gt;, &lt;map&gt; and &lt;area&gt; tags!</h1>
+    	<h1>Click on each icon to get redirected to the tutorials webpage for each language with &lt;image&gt;, &lt;map&gt; and &lt;area&gt; tags!</h1>
     	<img src="C:/Users/wubis/Downloads/HTML-CSS-JS.png" usemap="#map" width="500" height="500">
     	<map name="map">
     		<area shape="rect" coords="10,50,160,450" href="https://developer.mozilla.org/en-US/docs/Web/HTML/"></area>
@@ -396,14 +557,26 @@
         dlg.close();    
     };    
 	})();   
-	</script>  
-    			<br>
+	</script> 
+	        <h2>HTML page loading progress:~<h2> 
+	        	<style>
+		meter{  
+  		width: 300px;  
+  		height: 30px;  
+		}  
+		</style>
+		</head>
+		<body>
+			<div>
+		<meter min="1" value="65" max="100">
+		</div>
+		       <div class="footer">
     			<div class="loginfo">
     				<h2 class="heading">Login Page</h2>
     				<form action="LoginServelet" method="post">
     					<label id="lbl0">Email:</label><input id="lbl0" type="email"></input>
     					<br>
- The   					<label id="lbl1">Password:</label><input id="lbl1" type="password"></input>
+ 	  					<label id="lbl1">Password:</label><input id="lbl1" type="password"></input>
     					<br>
     					<input type="submit" value="Login"></input>
     				</form>
@@ -479,9 +652,8 @@
            		color:darkgreen;
            	}
 	</style>
-</head>
-<body>
-<div>
+		</head>
+		<div>
 	<div class="header">
 	  <h2>javaTpoint Div Layout</h2>
 	</div>
@@ -496,22 +668,17 @@
 				<li style="float: right;"><a href="#">SIGN-UP</a></li>
 			</ul>
       	</div> 
-      <!-- main -->
       	<div style="height:440px" width>
       		<div class="txtField">	
-      			<textarea style="color:darkgreen" type="text">Write your content over here</textarea>
+      			<textarea spellcheck="trues" tyle="color:darkgreen" type="text" placeholder=" Write your content over here !"></textarea>
       		</div>
       	<!-- side -->
       		<div class="Side">
       			<p>This is side tag field</p>
-      		</div>
       	</div>
-      <!-- footer -->
-       <div class="footer">
-    	<h3>HTML Footer</h3>  
-   		<p>&copy; Copyright 2018-2022.
-   			<br>
-   		<strong>@ javaTpoint.com</strong></p> 
-    </div>
-	</body>		
-</html> 
+      		<marquee>
+      			<img src="C:/Users/wubis/Downloads/Ethiopia-removebg-preview.jpg" widdth="500" height="250">
+      		</marquee>
+      	</div> 
+	</body>	
+	
