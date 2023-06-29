@@ -1,12 +1,12 @@
-      
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 	<html>
 		<head>
 		<title>HTML Title</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0"!></!For Android and other non-window platforms.>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
 		<style>
 			body{
 				text-align:center;
@@ -153,7 +153,39 @@
 		<marquee width="1300" height="25px" direction="right" bgcolor="black" style="color:white;"  border="1px solid blue"> &copy; WUBISHET ASBE :&rarr;      </strong></marquee>
 		<marquee width="1300" height="25px" behaviour="alternate" bgcolor="lightyellow" style="color:darkgreen;" border="1px solid pink">
 		 <strong>HTML :- as a  HyperText Markup language,   CSS :- as a  Cascading Style Sheet language  and  JavaScript :- as a  Scripting language to manipulate and style webpages ! </strong></marquee>
-		<h1 style="color:green">WUBISHET ASBE</h1>
+		 		<h1 style="color:violet;">
+		<span id="txt"></span>  
+		<script>  
+		  window.onload=function(){getTime();}  
+		  function getTime(){  
+		  var today=new Date(); 
+		  var yr=today.getFullYear();
+		  var dt=today.getDate();
+		  var mn=today.getMonth();
+		  var h=today.getHours();  
+		  var m=today.getMinutes();  
+		  var s=today.getSeconds(); 
+		  // add a zero in front of numbers<10
+		  yr=checkTime(yr);
+		  mn=checkTime(mn);
+		  dt=checkTime(dt);
+		  h=checkTime(h);
+		  m=checkTime(m);  
+		  s=checkTime(s);  
+		 document.getElementById('txt').innerHTML=mn+"/"+dt+"/"+yr+"\t"+h+":"+m+":"+s;
+		setTimeout(function(){getTime()},1000); 
+		}  
+		setInterval("getTime()",1000);//another way  
+		function checkTime(i){  
+		if (i<10){  
+		  i="0" + i;  
+		 }  
+		return i;  
+		}  
+		</script>
+		<br>
+		</h1>
+		<h1 style="color:darkblue">WUBISHET ASBE</h1>
 		<h1 style="color:green"> Primary HTML Head</h1>
 		<h2 style="color:blue">Secondary HTML head</h2>
 		<h5 style="color:yellowgreen">Fifth HTML head</h5>
@@ -226,7 +258,7 @@
        				  </ol> 
        				</ol>
        				<div>
-       				<h3> Font Awesome Icons </h3>
+       				<h3><u>Font Awesome Icons</u></h3>
        					      <i class="fa fa-cloud"></i>   
      						  <i class="fa fa-file"></i>   
           					  <i class="fa fa-heart"></i>   
@@ -234,7 +266,7 @@
      						  <i class="fa fa-car"></i>
      				</div>
      				<div>
-     				<h3>Bootstrap Icons</h3>
+     				<h3><u>Bootstrap Icons</u></h3>
      					<i class="glyphicon glyphicon-cloud"></i>   
  					    <i class="glyphicon glyphicon-file"></i>   
  					    <i class="glyphicon glyphicon-heart"></i>   
@@ -244,7 +276,7 @@
       					<i class="glyphicon glyphicon-envelope"></i>
       				</div>
       					<div>
-      				<h3>Google Icons</h3>
+      				<h3><u>Google Icons</u></h3>
       					<i class="material-icons">cloud</i>   
       					<i class="material-icons">attachment</i>   
       					<i class="material-icons">computer</i>   
@@ -265,12 +297,12 @@
 	            <div id="id8" class="loader"></div>   
 	            <div id="id9" class="loader"></div> 
 	            <div id="id10" class="loader"></div>
-				 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       		<h2><u>CSS Radial-Gradient()!</u></h2>
       		<div class="radial-grad"></div> 
-      		<h2 style="color:darkgoldenrod;"><u>Spinner with HTML and CSS !</u></h2> 
+      		<h2 style="color:darkgoldenrod;"><u>Spinner just with HTML and CSS !</u></h2> 
 			<div class="spinner"></div>  
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>    		      		
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>   		      		
 		<table id="alter">
 			<caption>Directorates' Information<caption>
 			<tr><th>First Name</th><th>Middle Name</th><th>Last Name</th><th>SSN</th></tr>
@@ -387,7 +419,7 @@
 		 <br>
 		 <label for="Search">Search over here: </label>
  	 	 <input id="Search" type="searcb" name="search" placeholder="type search item here"></input>
-	 <br>
+	 	<br>
 		 <br>
 		 <label for="telNo">Enter your Telephone Number:  </label>
 		 <input type="tel" id="telNo" name="PhoneNumber" pattern="[0-9]" required></input>
@@ -670,7 +702,7 @@
       	</div> 
       	<div style="height:440px" width>
       		<div class="txtField">	
-      			<textarea spellcheck="trues" tyle="color:darkgreen" type="text" placeholder=" Write your content over here !"></textarea>
+      			<textarea spellcheck="trues" style="color:darkgreen" type="text" placeholder=" Write your content over here !"></textarea>
       		</div>
       	<!-- side -->
       		<div class="Side">
@@ -681,4 +713,5 @@
       		</marquee>
       	</div> 
 	</body>	
+	
 	
